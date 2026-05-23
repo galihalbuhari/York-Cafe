@@ -80,7 +80,7 @@ const { useState, useEffect, useRef, useCallback, createContext, useContext, use
 /* ===================== CONFIG SUPABASE ===================== */
 const SUPABASE_URL = 'https://tdumhldxsdxicqflayge.supabase.co';
 const SUPABASE_ANON_KEY = 'sb_publishable_WPVYMjtudli5Sgecyaghgg_VoYtE8-8';
-const supabase = supabase_js.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+const supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
 /* ===================== MOCK DATA (saat Supabase belum terhubung) ===================== */
 const MOCK_CATEGORIES = [
